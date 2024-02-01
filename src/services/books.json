@@ -1,0 +1,23 @@
+[
+      {
+            "id": 0,
+            "name": "Pride and Prejudice",
+            "price": "15.99",
+            "category": "Regency Historical Romance",
+            "description": "Mrs Bennet has five daughters to marry. Not easy when they have a small dowry, and suitors are scarce. But a new young gentleman has just arrived at Netherfield Park, the neighbouring estate, and the good manners of the English gentry of the Regency era quickly arrange a ball to meet him."
+      },
+      {
+            "id": 1,
+            "name": "Northanger Abbey",
+            "price": "9.99",
+            "category": "Parody Romance",
+            "description": "Northanger Abbey is the story of seventeen-year-old Catherine Morland, one of ten children of a country clergyman, whose wild imagination and excessive fondness for Gothic novels (especially Ann Radcliffe's Mysteries of Udolpho) has skewed her worldview and interactions with others to great comic effect."
+      },
+      {
+            "id": 2,
+            "name": "Persuasion",
+            "price": "12.03",
+            "category": "Classic Literature",
+            "description": "The story concerns Anne Elliot, a young Englishwoman of twenty-seven years, whose family moves to lower their expenses and reduce their debt by renting their home to an Admiral and his wife. The wife's brother, Navy Captain Frederick Wentworth, was engaged to Anne in 1806, but the engagement was broken when Anne was persuaded by her friends and family to end their relationship. Anne and Captain Wentworth, both single and unattached, meet again after a seven-year separation, setting the scene for many humorous encounters as well as a second, well-considered chance at love and marriage for Anne in her second bloom."
+      }
+]

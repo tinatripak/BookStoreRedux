@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.addBook {
+        form {
+                label {
+                        min-width: 100px;
+                        display: inline-block;
+                }
+                input {
+                        height: 30px;
+                        width: 200px;
+                        margin: 0.5rem 1rem;
+                        border: 2px solid rgb(81, 50, 26);
+                        border-radius: 15px;
+                        font-family: 'Nunito', sans-serif;
+                }
+                .submitButton {
+                        width: 150px;
+                        height: 60px;
+                        background-color: rgb(63, 57, 54);
+                        color: white;
+                        cursor: pointer;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 auto;
+                        margin-top: 6vh;
+
+                        font-family: 'Nunito', sans-serif;
+                        font-size: 16px;
+
+
+                        &:hover{
+                                color: rgb(63, 57, 54);
+                                background-color: white;
+                        }
+                }
+        }
+}

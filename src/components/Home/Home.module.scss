@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
+.home{
+        margin-bottom: 3vh;
+        .title{
+                font-family: 'Diphylleia', serif;
+                text-align: center;
+        }
+        .addButton{
+                font-family: 'Nunito', sans-serif;
+                font-size: 20px;
+
+                border-radius: 20px;
+                width: 220px;
+                height: 60px;
+                background-color: rgb(63, 57, 54);
+                color: white;
+                cursor: pointer;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-bottom: 5vh;
+
+                &:hover{
+                        color: rgb(63, 57, 54);
+                        background-color: white;
+                }
+        }
+        .books{
+                width: 300px;
+                border: 1px solid gray;
+                border-radius: 15px;
+                padding: 2rem 2rem;
+                margin: 0 auto;
+        }
+        span{
+                width: 100px;
+        }
+}
