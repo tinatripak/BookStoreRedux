@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import "../../styles/variables.scss";
 
 .home{
         margin-bottom: 3vh;
         .title{
                 font-family: 'Diphylleia', serif;
                 text-align: center;
+                margin: 1rem 1rem;
         }
         .addButton{
                 font-family: 'Nunito', sans-serif;
@@ -29,11 +31,14 @@
                 }
         }
         .books{
-                width: 300px;
+                width: 360px;
                 border: 1px solid gray;
                 border-radius: 15px;
                 padding: 2rem 2rem;
                 margin: 0 auto;
+                @include breakpoint(smallScreen) {
+                        width: 300px;
+                }
         }
         span{
                 width: 100px;
