@@ -1,19 +1,17 @@
 .modalBackground {
-        width: 100vw;
         position: fixed;
         display: flex;
         justify-content: center;
-        align-items: center;
+        width: 100%;
+        top:20%;
 
         .modalContainer {
-                width: 500px;
-                height: 500px;
                 border-radius: 12px;
                 background-color: white;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 display: flex;
                 flex-direction: column;
-                padding: 25px;
+                padding: 17px;
 
                 .titleCloseBtn {
                         display: flex;
@@ -30,7 +28,8 @@
                 .title {
                         display: inline-block;
                         text-align: center;
-                        font-size: 23px;
+                        font-size: 18px;
+                        font-weight: 600;
                 }
 
 

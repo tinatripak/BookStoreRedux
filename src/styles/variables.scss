@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Arapey&family=Island+Moments&family=Jacques+Francois&family=Judson:wght@700&family=Julius+Sans+One&family=Junge&family=Linden+Hill&Poppins:wght@200;400;600&Roboto+Slab:wght@300;400;600&display=swap");
+
+$Jacques: "Jacques Francois", serif;
+$Poppins: "Poppins", sans-serif;
+$Allison: "Allison", cursive;
+$Arapey: "Arapey", serif;
+$IslandMoments: "Island Moments", cursive;
+$Judson: "Judson", serif;
+$Julius: "Julius Sans One", sans-serif;
+$Junge: "Junge", cursive;
+$Linden: "Linden Hill", serif;
+$Roboto: "Roboto Slab", serif;
+
+$bg: rgb(252, 255, 247);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$gray: rgb(135, 135, 135);
+$light-blue: rgb(233, 245, 255);
+$light-purple: rgb(243, 233, 255);
+$arrow-color: rgb(188, 150, 217);
+$purple-circle: rgb(243, 233, 255);
+$orange-circle: rgb(253, 177, 123);
+$light-pink-circle: rgb(239, 224, 229);
+$pink-circle: rgb(245, 181, 198);
+$dark-pink-circle: rgb(236, 165, 189);
+$light-blue-circle: rgb(210, 224, 255);
+
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$spacing-xl: 40px;
+
+$contactBorderRadius: 20px;
+$buttonBorderRadius: 30px;
+$photoBorderRadius: 30px;
+$workExperienceBorderRadius: 40px;
+$bgPhotoBorderRadius: 150px;
+$blockBorderRadius: 30px;
+$borderCircle: 50%;
+
+$screenHeight: 100vh;
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+        @if $point == mediumScreen {
+                @media (max-width: 54em) {
+                        @content;
+                }
+        } @else if $point == smallScreen {
+                @media (max-width: 530px) {
+                        @content;
+                }
+        } @else if $point == bigScreen {
+                @media (max-width: 100em) {
+                        @content;
+                }
+        }
+}
