@@ -1,80 +1,86 @@
+@import "../../styles/variables.scss";
+
 .modalBackground {
-        position: absolute;
-        top: 40%;
-        transform: translateX(-20%);
+  position: absolute;
+  top: 40%;
+  transform: translateX(-20%);
+  @include breakpoint(smallScreen) {
+    margin-left: 40px;
+  }
 
-        .modalContainer {
-                width: 500px;
-                border-radius: 12px;
-                background-color: white;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                display: flex;
-                flex-direction: column;
-                padding: 25px;
+  .modalContainer {
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
 
-                .titleCloseBtn {
-                        display: flex;
-                        justify-content: flex-end;
+    .titleCloseBtn {
+      display: flex;
+      justify-content: flex-end;
 
-                        button {
-                                background-color: transparent;
-                                border: none;
-                                font-size: 25px;
-                                cursor: pointer;
-                        }
-                }
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
 
-                .title {
-                        display: inline-block;
-                        text-align: center;
-                        margin-top: 10px;
-                        font-size: 10px;
-                }
+    .title {
+      display: inline-block;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 10px;
+    }
 
+    .modalBody {
+      flex: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.7rem;
+      text-align: center;
+    }
 
-                .modalBody {
-                        flex: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 1.7rem;
-                        text-align: center;
-                }
+    .modalFooter {
+      flex: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(smallScreen) {
+        display: block;
+        width: min-content;
+        margin: 0 auto;
+      }
 
-                .modalFooter {
-                        flex: 20%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+      button {
+        width: 150px;
+        height: 45px;
+        margin: 10px;
+        border: none;
+        background-color: rgb(142, 8, 35);
+        border: 1px solid rgb(142, 8, 35);
 
-                        button {
-                                width: 150px;
-                                height: 45px;
-                                margin: 10px;
-                                border: none;
-                                background-color: rgb(142, 8, 35);
-                                border: 1px solid rgb(142, 8, 35);
+        color: white;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
 
-                                color: white;
-                                border-radius: 8px;
-                                font-size: 20px;
-                                cursor: pointer;
-
-                                &:hover{
-                                        color:rgb(142, 8, 35);
-                                        background-color: transparent;
-                                }
-                                &.cancelBtn {
-                                        background-color: rgb(59, 111, 54);
-                                        border: 1px solid rgb(59, 111, 54);
-                                        &:hover{
-                                                color:rgb(59, 111, 54);
-                                                background-color: transparent;
-                                        }
-                                }
-                        }
-                }
-
-                
+        &:hover {
+          color: rgb(142, 8, 35);
+          background-color: transparent;
         }
+        &.cancelBtn {
+          background-color: rgb(59, 111, 54);
+          border: 1px solid rgb(59, 111, 54);
+          &:hover {
+            color: rgb(59, 111, 54);
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }
